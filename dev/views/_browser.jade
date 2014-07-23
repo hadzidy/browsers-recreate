@@ -1,0 +1,13 @@
+mixin navegadores(navegador, percent)
+	li.navegador(class= navegador)
+		h4.statistics= percent
+			div PEOPLE ARE USING THIS BROWSER
+		.center= navegador
+			.logo
+
+ul.browser-container
+	+navegadores("chrome", "48.7%")
+	+navegadores("firefox", "19.6%")
+	+navegadores("explorer", "23%")
+	+navegadores("safari", "4.9%")
+	+navegadores("opera", "1.4%")
